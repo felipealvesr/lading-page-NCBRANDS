@@ -1,0 +1,150 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: 'Oxanium-ExtraLight';
+    src: url('../fonts/Oxanium-ExtraLight.ttf')
+}
+@font-face {
+    font-family: 'Oxanium-Light';
+    src: url('../fonts/Oxanium-Light.ttf')
+}
+@font-face {
+    font-family: 'Oxanium-Regular';
+    src: url('../fonts/Oxanium-Regular.ttf')
+}
+@font-face {
+    font-family: 'Oxanium-SemiBold';
+    src: url('../fonts/Oxanium-SemiBold.ttf')
+}
+@font-face {
+    font-family: 'Oxanium-Bold';
+    src: url('../fonts/Oxanium-Bold.ttf')
+}
+
+html{
+    background: black;
+}
+
+
+/*custom css*/
+
+.background{
+    background-image: url("../img/01.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 10%;
+}
+ 
+.text *{
+    margin: 2% 0;
+    color: white;
+}
+.text img{
+    width: 50%;
+}
+.text h1{ font-family: 'Oxanium-ExtraLight';
+    font-size: 70px;
+}
+.text h2{
+    font-family: 'Oxanium-Light';
+    font-size: 30px;
+    color: blue;
+}
+.text p{
+    font-family: 'Oxanium-Light';
+}
+
+.links a{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid blue;
+    border-radius: 100px;
+    text-align: center;
+    padding: 2% 0%;
+    width: 60%;
+    font-family: 'Oxanium-Light';
+    transition: 0.3s ease;
+}
+.links a:hover{
+    background-color: blue;
+    transition: 0.3s ease;
+    border: 1px solid blue;
+}
+
+@media screen and (max-width:1000px) {
+    .background {
+        background-image: url(../img/02.png);
+        background-size: cover;
+        height: 100vh;
+    }
+    .text{
+        margin: 0 auto;
+        width: 70%;
+    }
+    .text img {
+        margin: 0 auto;
+        width: 60%;
+        text-align: center;
+    }
+    .text h1,  .text h2,  .text p{
+        text-align: center;
+    }
+    .text h1{
+        font-size: 60px;
+    }
+    .links a{
+        padding: 4% 0%;
+        margin: 13px auto !important;
+        width:90%;
+    }
+   
+
+}
+
+@media screen and (max-width:480px) {
+    .text h1 {
+        font-size: 28px;
+        line-height: 1.0em;
+        margin: 18px 0;
+    }
+    .text h2 {
+        font-size: 18px;
+    }
+    .text p {
+       font-size: 13px;
+    }
+   
+    .text{ 
+        width: auto;
+        padding: 0 15%;
+    }
+   
+}
+
+@media screen and (min-width:1700px) {
+    .text h1{
+        font-size: 100px;
+    }
+    .links a{
+        font-size: 25px;
+    }
+    .text p{
+        font-size: 25px;
+    }
+
+}
